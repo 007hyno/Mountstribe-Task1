@@ -1,0 +1,10 @@
+.banner{
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 660px;
+}
+.carousel-inner{
+    height: 660px;  
+}

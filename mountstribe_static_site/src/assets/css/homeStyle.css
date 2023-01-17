@@ -1,0 +1,319 @@
+/*Home - Carousel*/
+.carousel-inner .carousel-item {
+    height: 60px;
+}
+
+.home-container{
+    padding:0 190px ;
+  }
+
+.carousel-inner .banner {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 660px;
+}
+
+.carousel-caption {
+    padding-bottom: 150px;
+    font-family: 'Poppins';
+    text-shadow: 0px 0px 6px rgba(0,0,0,0.6);
+}
+
+.carousel-caption h2 {
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 0px 5px rgba(0,0,0,0.6);
+}
+
+.carousel-caption h2 span {
+    color: #1E6AE1;
+}
+
+.carousel-caption a {
+    background: #1E6AE1;
+    padding: 15px 35px;
+    display: inline-block;
+    margin-top: 15px;
+    color: #FFF;
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+
+.carousel-indicators .active {
+    background-color: #1E6AE1;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1440px) {    
+    .carousel-caption h2 {
+        font-size: 52px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-caption h2 {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .carousel-inner .carousel-item {
+        height: 500px;
+    }
+    .carousel-caption {
+        padding-bottom: 105px;
+    }
+    
+    .carousel-caption h2 {
+        font-size: 36px;
+    }
+    
+    .carousel-caption h3 {
+        font-size: 24px;
+    }
+    
+    .carousel-caption a {
+        padding: 10px 25px;
+    }
+}
+
+
+/*About section*/
+.about-mt {
+    padding: 80px 20%;
+}
+.about-mt h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.9rem;
+    font-weight: 300;
+    color: #06152d;
+    opacity: 0.80;
+    text-transform: uppercase;
+    letter-spacing: 3.4px;
+}
+.about-mt p {
+    padding: 0px;
+    font-size: 14px;
+    opacity: 0.90;
+    line-height: 1.6em;
+    letter-spacing: 1px;
+}
+@media only screen and (max-width: 575px) {
+    .about-mt {
+        padding: 40px 16px;
+    }
+}
+@media only screen and (max-width: 991px) and (min-width: 576px) {
+    .about-mt {
+        padding: 80px 10%;
+    }
+}
+
+/*Farm to Fork*/
+.farm-to-fork {
+    padding: 80px 0 40px;
+}
+.farm-to-fork h2 {
+    font-weight: 700;
+    color: #1E6AE1;
+    font-size: 2.65rem;
+}
+.farm-to-fork .row {
+    margin: 0;
+}
+.farm-to-fork p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 20px 20% 0px;
+    color: #1e365c;
+}
+.farm-to-fork img {
+    width: 90%;
+    display: inline-block !important;
+}
+
+@media only screen and (min-width: 1441px) {
+    .farm-to-fork h2 {
+        font-weight: 800;
+        font-size: 4rem;
+    }   
+    .farm-to-fork img {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .farm-to-fork {
+        padding: 40px 0;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 501px) {
+    .farm-to-fork h2 {
+        font-size: 2rem;
+    }
+    .farm-to-fork p {
+        font-size: 0.75rem;
+        font-weight: 600;
+        padding: 20px 10%;
+        line-height: 1.6em;
+    }
+    .farm-to-fork img {
+        width: 70%;
+        display: inline-block !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .farm-to-fork h2 {
+        font-size: 1.9rem;
+    }
+    .farm-to-fork p {
+        font-size: 0.65rem;
+        font-weight: 600;
+        padding: 20px 5%;
+        line-height: 1.6em;
+    }
+    .farm-to-fork img {
+        width: 100%;
+    }
+}
+
+/*Style for product list*/
+.products-banner {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #eceff1;
+}
+.products-heading {
+    font-size: 1.9rem;
+    font-weight: 300;
+    color: #06152d;
+    opacity: 0.80;
+}
+.product-box {
+    padding: 16px 16px 0px 16px;
+}
+.product-icon {
+    max-width: 120px;
+    transition: all 0.27s ease-in-out;
+}
+.product-category-name {
+    padding-top: 16px;
+}
+.product-category-name a {
+    text-decoration: none;
+    color: #1ecbe1;
+    font-size: 18px;
+    transition: all 0.27s ease-in-out;
+}
+.product-box:hover > .product-icon,
+.product-box:hover > .product-category-name a {
+    opacity: 0.90;
+}
+@media only screen and (max-width: 767px) {
+    .products-banner {
+        padding: 48px 8px 48px 8px;
+    }
+    .product-box {
+        padding: 16px;
+    }
+    .product-icon {
+        max-width: 100px;
+    }
+    .product-category-name a {
+        padding: 4px;
+        font-size: 16px;
+    }
+}
+
+/*Why-Us banner*/
+.why-us-banner {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.why-us-heading {
+    font-size: 1.9rem;
+    font-weight: 300;
+    color: #06152d;
+    opacity: 0.80;
+}
+.why-us-box {
+    padding: 16px 16px 0px 16px;
+}
+.why-us-icon {
+    max-width: 120px;
+}
+.why-us-title {
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #06152d;
+    opacity: 0.80;
+}
+.why-us-text {
+    padding: 8px;
+    font-size: 14px;
+    opacity: 0.90;
+}
+@media only screen and (max-width: 767px) {
+    .why-us-banner {
+        padding: 48px 8px 48px 8px;
+    }
+    .why-us-box {
+        padding: 16px;
+    }
+    .why-us-icon {
+        max-width: 100px;
+    }
+    .why-us-title {
+        padding: 4px;
+        font-size: 16px;
+    }
+    .why-us-text {
+        padding-top: 4px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+
+/*Visit-Us-Banner*/
+.visit-us-banner {
+    padding: 80px 220px;
+    background-image: url("/images/jakholi.jpg");
+    background-size: 146% 102.5%;
+    background-repeat: repeat;
+    background-position: 10px -100px;
+}
+
+.visit-us-heading {
+    font-size: 1.9rem;
+    font-weight: 300;
+    color: #06152d;
+    opacity: 0.80;
+    text-shadow: 0.5px 0.5px 4px rgba(6,21,45,0.61);
+}
+
+.visit-us-text {
+    padding: 16px 100px 32px 100px;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #fff;
+    opacity: 0.9;
+    text-shadow: 0.5px 0.5px 3px rgba(255,255,255,0.61);
+}
+
+@media only screen and (max-width: 991px) {
+    .visit-us-banner {
+        padding: 48px 8px;
+        background-size: 226% 103%;
+    }
+    .visit-us-text {
+        padding: 16px 32px 16px 32px;
+        font-size: 12px;
+    }
+}

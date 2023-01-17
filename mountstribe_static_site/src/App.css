@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+}
+.border{
+  border: 15px solid blue;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.test{
+    border:9px solid #282c34;
+}
+.back-g{
+  background-color: #1a1e258b;
+}
+.mainLayout{
+  margin-top: 60px;
+}
+.carousel {
+  width:auto  ;
+  height:500px;
+  margin: auto;
+}
+
+.nav-link{
+  color: #2699FB !important;
+
+}
+text-white{
+  color: #ffffff;
+}
+
+.blog-banner{
+  padding: 186px 16px;
+    background-image: url(./assets/images/blog1.jpg);
+    background-size: cover;
+    background-color: rgba(30, 202, 225, 0.449);
+    background-blend-mode: overlay;
+}
+.contact-us-banner{
+  padding: 186px 16px;
+    background-image: url(./assets/images/contact1.jpg);
+    background-size: cover;
+    background-color: rgba(30, 202, 225, 0.449);
+    background-blend-mode: overlay;
+}
+.join-tribe{
+  background-color: #207ed0;
+  padding: 100px 400px;
+
+}
+.about-us-banner{
+  background-image: url(./assets/images/about1.jpg);
+  padding: 186px 16px;
+  background-position: -2px -100px;
+  background-color: rgba(30, 203, 225, 0.6);
+  background-blend-mode: multiply;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
