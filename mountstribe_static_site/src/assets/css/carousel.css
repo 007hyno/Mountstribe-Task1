@@ -1,10 +1,40 @@
-.banner{
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 660px;
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Poppins&family=Raleway&family=Roboto&display=swap');
+
+.carousel-img-css{
+/* //a */
+height:700px;
 }
-.carousel-inner{
-    height: 660px;  
+.carousel {
+    width:auto;
+    height:700px;
+    margin: auto;
+  }
+  .carousel-caption{
+      top:40%;
+    }
+    .carousel-title{
+      font-family: 'Raleway', sans-serif;
+      font-size: 70px;
+      font-weight: 900;
+      text-align: center;
+      color:#00ffbf;
+      
+    }
+    .carousel-desc{
+        color:#ffffffd7;
+        font-weight: 500;
+    }
+    .carousel-text{
+      background-color: #4546464e;
+  }
+
+  /* @media only screen and (max-width: 575px) {
+    .about-mt {
+        padding: 40px 16px;
+    }
 }
+@media only screen and (max-width: 991px) and (min-width: 576px) {
+    .about-mt {
+        padding: 80px 10%;
+    }
+} */

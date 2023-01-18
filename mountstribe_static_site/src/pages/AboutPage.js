@@ -1,6 +1,9 @@
 import React from 'react'
 import MainLayout from '../layout/MainLayout'
 
+import '../assets/css/about-style.css'
+
+
 import priya from '../assets/images/priya.jpg'
 import ravi from '../assets/images/ravi.jpg'
 import kartikeya from '../assets/images/kartikeya.jpg'
@@ -8,7 +11,7 @@ import kartikeya from '../assets/images/kartikeya.jpg'
 function AboutPage() {
   return (
         <MainLayout>
-    <div>
+    <div className='main-cont'>
     
     
     <div className="text-center align-middle about-us-banner">
@@ -16,11 +19,11 @@ function AboutPage() {
 		            <br/>
 		            <div className="sub-heading"><a className="home-link" href="index.html">Home</a> / About Us</div>
 		        </div>
-		        <div className="container">
-		            <div className="our-story contact-story">
+				<div className='story-cont'>
+		            <div className=" contact-story">
 		                <div className="row">
 		                    <div className="col">
-		                        <h3>Our Story</h3>
+		                        <h3 className='title'>Our Story</h3>
 		                    </div>
 		                </div>
 		                <div className="row">
@@ -38,13 +41,14 @@ function AboutPage() {
 		                        </p>
 		                    </div>
 		                </div>
-		            </div>
-		        </div>
-		        <div className="learn-innovate">
+		        
+						</div>
+						</div>
+		        <div className="learn-innovate spacing">
 		          <div className="container contact-story">
 		            <div className="row">
 		                <div className="col">
-		                    <h3>Innovative Aquaponics</h3>
+		                    <h3 className='title'>Innovative Aquaponics</h3>
 		                </div>
 		            </div>
 		            <div className="row">
@@ -64,15 +68,15 @@ function AboutPage() {
 		            </div>
 		          </div>
 		        </div>
-		        <div className="container">
+		        <div className="container spacing">
 		            <div className="our-story contact-story">
 		                <div className="row">
 		                    <div className="col">
-		                        <h3>The Team</h3>
+		                        <h3 className='text-center title'>The Team</h3>
 		                    </div>
 		                </div>
 						<div className="row team-cards">
-							<div className="col-md-4">
+							<div className="col-lg-4">
 								<div className="card">
 									<img className="card-img-top" src={ravi} alt="Executive Head"/>
 									<div className="card-body">
@@ -82,7 +86,7 @@ function AboutPage() {
 									</div>
 								</div>
 							</div>
-							<div className="col-md-4">
+							<div className="col-lg-4">
 								<div className="card">
 									<img className="card-img-top" src={priya} alt="Financial Head"/>
 									<div className="card-body">
@@ -92,7 +96,7 @@ function AboutPage() {
 									</div>
 								</div>
 							</div>
-							<div className="col-md-4">
+							<div className="col-lg-4">
 								<div className="card">
 									<img className="card-img-top" src={kartikeya} alt="Technology Head"/>
 									<div className="card-body">
@@ -106,9 +110,9 @@ function AboutPage() {
 		            </div>
 		        </div>
 		        <div className="row join-tribe text-center text-white">
-		            <h3 className="join-tribe-heading">Join the Tribe</h3>
-		            <p className="text-center">A community of enthusiastic, and innovative people who are determined to bring a change in society. Be a part of our revolutionary team and follow us for updates, on our social media handles.</p>
-	                <ul className="text-center">
+		            <h3 className="join-tribe-heading title">Join the Tribe</h3>
+		            <p className="text-center desc">A community of enthusiastic, and innovative people who are determined to bring a change in society. Be a part of our revolutionary team and follow us for updates, on our social media handles.</p>
+	                <ul className="text-center flex">
 		                <li><a href="#"><i className="fa fa-facebook-f"></i></a></li>
 		                <li><a href="#"><i className="fa fa-twitter"></i></a></li>
 		                <li><a href="https://www.linkedin.com/company/mountstribe-agritech"><i className="fa fa-linkedin"></i></a></li>

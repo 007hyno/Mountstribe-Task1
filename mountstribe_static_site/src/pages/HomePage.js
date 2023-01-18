@@ -2,16 +2,14 @@ import React from 'react'
 import MainLayout from '../layout/MainLayout'
 import { Link } from 'react-router-dom';
 import Carousel from '../components/Carousel'
+import Carousel2 from '../components/Carousel2'
 // import { Carousel } from 'react-bootstrap';
 // import '../assets/css/homeStyle.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../assets/css/home-style.css'
 
 
 
-import {
-  MDBCarousel,
-  MDBCarouselItem,
-} from 'mdb-react-ui-kit';
 
 import farm1 from '../assets/images/farm.png'
 import farm2 from '../assets/images/farm2.png'
@@ -25,54 +23,23 @@ import t1 from '../assets/images/t1.png'
 import t2 from '../assets/images/t2.png'
 import t3 from '../assets/images/t3.png'
 import t4 from '../assets/images/t4.png'
-
 import jakholi from '../assets/images/jakholi.jpg'
+
 
 function HomePage() {
   return (
     <MainLayout>
       <div className='home-container '>
 
-      <MDBCarousel showIndicators showControls fade>
-      <MDBCarouselItem
-        className='w-100  d-block'
-        itemId={1}
-        src='https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg'
-        alt='...'
-      >
-        <h5>First slide label</h5>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </MDBCarouselItem>
-
-      <MDBCarouselItem
-        className='w-100 d-block'
-        itemId={2}
-        src='https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg'
-        alt='...'
-      >
-        <h5>Second slide label</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </MDBCarouselItem>
-
-      <MDBCarouselItem
-        className='w-100 d-block'
-        itemId={3}
-        src='https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg'
-        alt='...'
-      >
-        <h5>Third slide label</h5>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-      </MDBCarouselItem>
-    </MDBCarousel>
-
-        {/* <Carousel /> */}
+        <Carousel />
 
 
-
-        <div className="jumbotron-fluid about-mt">
+        <div className="jumbotron-fluid jumbo">
           <div className="container">
-            <div className="row text-center"><h2 className="col">Mountstribe</h2></div>
-            <div className="row text-center"><div className="col"><img src='/images/mt-underline.png' /></div></div>
+            <div className="row text-center"><h2 className="jumbo-title col">Mountstribe</h2></div>
+            <div className="row text-center"><div className="col">
+              <img className="img-fluid" src={mt} />
+            </div></div>
             <div className="row text-center"><p className="col lead">At Mountstribe, we want to revolutionize food production in India by bringing the Highest Quality, Fresh &amp; Chemical-Free produce to your table. Each produce is grown with Non-GMO Seeds &amp; is Pesticide and Insecticide Free with a perfect blend of nutrition for your health.</p></div>
           </div>
         </div>
@@ -115,11 +82,13 @@ function HomePage() {
               </div>
               <div className="col-sm-12 col-md-3 text-center product-box">
                 <img className="img-fluid product-icon" src={prem4} />
-                <div className="text-center text-secondary product-category-name"><Link className="nav-link " to="/store">Herbs</Link></div>
+                <div className="text-center text-secondary product-category-name"><Link className="nav-link text-secondary" to="/store">Herbs</Link></div>
               </div>
             </div>
           </div>
         </div>
+
+
 
         <div className="why-us-banner container">
           <div className="row">
@@ -165,7 +134,7 @@ function HomePage() {
             </div>
             <div className="row">
               <div className="col text-center">
-                <img className="img-fluid" src={jakholi} />
+                {/* <img className="img-fluid" src={jakholi} /> */}
               </div>
             </div>
             <div className="row">

@@ -28,7 +28,7 @@ function App() {
     <Route exact path='/contact' element={< Contact />}></Route>
     <Route exact path='/Blog' element={< Blog />}></Route>
     <Route exact path='/Store' element={< Store />}></Route>
-    <Route exact path='/Login' element={< Contact />}></Route>
+    <Route exact path='/Login' element={< Login />}></Route>
     <Route exact path='*' element={< NotFound />}></Route>
 
 </Routes>

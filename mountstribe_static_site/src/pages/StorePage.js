@@ -6,15 +6,17 @@ import store1 from '../assets/images/store1.png'
 import store2 from '../assets/images/store2.png'
 import store3 from '../assets/images/store3.png'
 
+import '../assets/css/store-style.css'
+
 function StorePage() {
   return (
     <MainLayout>
       <div>
 
 
-        <div className="jumbotron jumbotron-fluid mt-header">
+        <div className="jumbotron jumbotron-fluid mt-header ">
           <div className="container">
-            <p className="text-center">Shop now at the Mounstribe Store online. Get free, no-contact delivery.</p>
+            <p className="text-center top-text">Shop now at the Mounstribe Store online. Get free, no-contact delivery.</p>
           </div>
         </div>
         <div className="container-fluid text-center mt-product">

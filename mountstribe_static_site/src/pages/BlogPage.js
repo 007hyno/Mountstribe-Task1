@@ -1,5 +1,6 @@
 import React from 'react'
 import MainLayout from '../layout/MainLayout'
+import '../assets/css/blog-style.css'
 function BlogPage() {
   return (
         <MainLayout>

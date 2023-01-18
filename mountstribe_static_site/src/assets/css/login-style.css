@@ -1,0 +1,80 @@
+.login-container{
+    /* padding-top: 80px; */
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+}
+
+.form-login{
+    margin-top: 100px;
+}
+
+.form-cont{
+    /* padding: 40px 400px; */
+}
+.form-container{
+    margin:80px 380px ;
+}
+.sign-in {
+	background-color: #FCFCFC;
+    padding-top: 11.5rem;
+    min-height: 65vh;
+    padding-bottom: 10rem;
+    color: #282828;
+}
+
+.sign-in h1 {
+	padding-bottom: 1rem;
+}
+
+.signed-in {
+	background-color: #FCFCFC;
+    padding-top: 11.5rem;
+    min-height: 85vh;
+    padding-bottom: 10rem;
+    color: #282828;
+}
+
+.signed-in h1 {
+	padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 1467px) {
+    .login-container{
+        padding: 80px 100px;
+    }
+    .login-form{
+        padding: 20px 100px;
+    }
+
+}
+
+@media only screen and (max-width: 967px) {
+    .login-container{
+        padding: 80px 70px;
+    }
+    .form-cont{
+        padding: 40px 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .form-cont{
+        padding: 40px 50px;
+        width: 90%;
+    }
+    .login-container{
+        padding: 80px 20px;
+    }
+}
+
+@media only screen and (max-width: 467px) {
+    .form-cont{
+        padding: 10px 1px;
+        width: 90%;
+    }
+    .login-container{
+        padding: 80px 10px;
+    }
+}

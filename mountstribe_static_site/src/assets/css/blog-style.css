@@ -1,0 +1,112 @@
+.blog-banner {
+    padding: 186px 16px;
+    background-image: url(../images/blog1.jpg);
+    background-size: cover;
+    background-color: #08080872;
+    background-blend-mode: overlay;
+}
+
+.blog-banner .heading {
+    color: #fff;
+    font-weight: 200;
+    font-size: 2.5rem;
+    opacity: 0.90;
+    text-transform: uppercase;
+    text-shadow: 0.5px 0.5px 4px rgba(6,21,45,0.61);
+}
+
+.blog-banner .sub-heading {
+    color: #fff;
+}
+
+.blog-banner .home-link {
+    text-decoration: none;
+    color: #1EE196;
+    opacity: 0.85;
+    transition: 0.2s ease;
+}
+
+.blog-banner .home-link:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 320px) {
+    .blog-banner {
+        background-position: -220px 0px !important;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .blog-banner {
+        background-position: -160px 0px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .blog-banner {
+        padding: 150px 16px;
+    }
+    
+    .blog-banner .heading {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .blog-banner {
+        background-position: center;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .blog-banner {
+        padding: 200px 16px;
+    }
+}
+
+.blog-page {
+    padding-top: 64px;
+}
+
+.social-banner {
+    padding-bottom: 16.5%;
+    z-index: 0 !important;
+}
+
+.social-banner .card {
+    -webkit-box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.75);
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.social-banner .card-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #06152d;
+    opacity: 0.80;
+}
+
+.social-banner .card-text {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #06152d;
+}
+
+.social-banner .card-footer a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #1E6AE1;
+    transition: all 0.27s ease-in;
+}
+
+.social-banner .card-footer a:hover {
+    color: #1ECBE1;
+}
+
+@media only screen and (min-width: 768px){    
+    .social-banner {
+        padding-top: 32vh;
+    }
+}

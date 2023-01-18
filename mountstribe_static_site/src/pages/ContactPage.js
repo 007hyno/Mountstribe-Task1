@@ -1,5 +1,7 @@
 import React from 'react'
 import MainLayout from '../layout/MainLayout'
+import '../assets/css/contact-style.css'
+
 function ContactPage() {
   return (
     <MainLayout>
@@ -10,9 +12,9 @@ function ContactPage() {
 	            <br/>
 	            <div className="sub-heading"><a className="home-link" href="index.html">Home</a> / Contact Us</div>
 	        </div>
-          <div className="container">
+          <div className="contact-container">
 	            <div className="row address-message-banner">
-	                <div className="col-md-6 address-banner">
+	                <div className="col-lg-6 col-md-12 address-banner">
 	                    Get in touch
 	                    <br/><br/>
 	                    <address>Mountstribe Agritech Pvt. Ltd.<br/>C/O Balam Singh, 1 Tarla Aamwaala<br/>Dehradun, Uttarakhand - 248001, India
@@ -28,8 +30,8 @@ function ContactPage() {
 	                        </div>
 	                    </address>
 	                </div>
-	                <div className="col-md-6 message-banner">
-	                    Leave a message <br/><br/>
+	                <div className="col-lg-6 col-md-12 message-banner">
+	                    Leave a message<br/><br/>
 	                    <form id="contact-form" >
 						  
 	                      <div className="form-row">
@@ -46,7 +48,7 @@ function ContactPage() {
 	                      <div className="form-group">
 	                        <textarea className="form-control" id="message" rows="3" placeholder="Message" name="message" required></textarea>
 	                      </div>
-	                      <button type="submit" className="btn btn-primary btn-block send-button">Submit</button>
+	                      <button type="submit" className="mx-2 btn btn-primary btn-block send-button">Submit</button>
 	                    </form>
 	                </div>
 	            </div>

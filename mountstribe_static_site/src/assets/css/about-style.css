@@ -1,0 +1,204 @@
+/*About-Us-Banner*/
+
+
+
+.about-us-banner {
+    padding: 186px 16px;
+    background-image: url("../images/about1.jpg");
+    background-position: -2px -100px;
+    background-color: #08080872;
+    background-blend-mode: multiply;
+}
+
+.about-us-banner .heading {
+    color: #fff;
+    font-weight: 200;
+    font-size: 2.5rem;
+    opacity: 0.90;
+    text-transform: uppercase;
+    text-shadow: 0.5px 0.5px 4px rgba(6, 21, 45, 0.61);
+}
+
+.about-us-banner .sub-heading {
+    color: #fff;
+}
+
+.about-us-banner .home-link {
+    text-decoration: none;
+    color: #1EE196;
+    opacity: 0.85;
+    transition: 0.2s ease;
+}
+
+.about-us-banner .home-link:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+    .about-us-banner {
+        padding: 150px 16px;
+        background-position: -50px -50px;
+    }
+
+    .about-us-banner .heading {
+        font-size: 2rem;
+    }
+
+    .spacing {
+        padding: 0 50px;
+    }
+    .story-cont {
+        padding: 30px 50px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+
+    .about-us-banner {
+        padding: 200px 16px;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.story-cont {
+     padding: 80px 230px;
+}
+
+
+
+.our-story {
+    background-size: cover;
+    padding: 80px 80px;
+    background-color: #ffffffe0;
+    background-blend-mode: soft-light;
+}
+
+
+
+.contact-story h3 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #212121;
+    padding-bottom: 16px;
+    opacity: 0.9;
+}
+
+.contact-story p {
+    font-size: 0.9rem;
+    color: #424242;
+    opacity: 0.98;
+    font-weight: 400;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+.learn-innovate {
+    background-size: cover;
+    padding: 80px 220px;
+    background-color: #1ee19632;
+
+    background-blend-mode: soft-light;
+}
+
+.our-story .team-cards .card {
+    max-width: 300px;
+    border: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.our-story .team-cards .card img {
+    width: 100%;
+}
+
+.join-tribe {
+    background: #1E6AE1;
+    color: #fff !important;
+    padding: 40px 220px;
+}
+
+.join-tribe .join-tribe-heading {
+    margin: 0 auto;
+    font-size: 2.1rem;
+    font-weight: 600;
+    padding-bottom: 16px;
+    color: white;
+}
+
+.join-tribe p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: white;
+}
+
+.join-tribe ul {
+    display: flex;
+    margin: 15px auto 0 auto;
+    list-style-type: none;
+    justify-content:center;
+
+}
+
+.join-tribe ul li {
+    padding-left: 10px;
+    padding-top: 10px;
+    float: left;
+}
+
+.join-tribe ul {
+    padding-left: 0px;
+}
+
+.join-tribe ul li a {
+    color: #CCC;
+    border: 1px solid #CCC;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.join-tribe ul li i {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .join-tribe {
+        padding: 40px 100px;
+    }
+    .our-story{
+        padding: 20px 10px;
+    }
+    .learn-innovate{
+        padding: 30px 50px;
+    }
+    .story-cont {
+        padding: 30px 50px;
+   }
+}
+
+@media only screen and (max-width: 575px) {
+    .join-tribe {
+        padding: 40px 32px;
+    }
+    .story-cont {
+        padding: 40px 33px;
+   }
+}
+    @media only screen and (max-width: 467px) {
+        .join-tribe {
+            padding: 10px 30px;
+        }
+        .our-story{
+            padding: 10px 20px;
+        }
+        .learn-innovate{
+            padding: 10px 20px;
+        }
+        .story-cont {
+            padding: 10px 20px;
+       }
+    }
