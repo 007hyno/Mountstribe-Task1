@@ -21,7 +21,7 @@ function Footer() {
 				</div>
 				<div className="row">
 					<div className=" col-sm-4 col-md col-sm-4  col-12 col">
-						<h5 className="headin5_amrc col_white_amrc pt2">Find us</h5>
+						<h5 className="headin5_amrc col_white_amrc pt2 rp">Find us</h5>
 						<p className="mb10"> Mountstribe is a startup nestled in the Himalayas. We want to change the landscape of Indian Agricultural industry by producing and providing Highly Nutritious & Chemical-Free 'Organic' food.</p>
 						<p><i className="fa fa-location-arrow"></i> C/O Balam Singh, 1 Tarla Amwaala, Dehradun, Uttarakhand - 248001 </p>
 						<p><i className="fa fa fa-envelope"></i> info@mountstribe.com  </p>
@@ -48,7 +48,7 @@ function Footer() {
 					</div>
 				</div>
 			</div>
-			<div className="container">
+			<div className="container social_footer_parent">
 				<p className="text-center">Copyright 2019-21 | Made with love by <Link to="/">Mountstribe</Link></p>
 
 				<ul className="social_footer_ul">
