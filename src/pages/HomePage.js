@@ -1,8 +1,8 @@
 import React from 'react'
-import MainLayout from '../layout/MainLayout'
+import MainLayout from '../layout/MainLayout.js'
 import { Link } from 'react-router-dom';
-import Carousel from '../components/Carousel'
-import Carousel2 from '../components/Carousel2'
+import Carousel from '../components/Carousel.js'
+import Carousel2 from '../components/Carousel2.js'
 // import { Carousel } from 'react-bootstrap';
 // import '../assets/css/homeStyle.css';
 import 'bootstrap/dist/css/bootstrap.min.css';

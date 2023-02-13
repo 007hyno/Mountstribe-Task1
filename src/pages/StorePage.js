@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import MainLayout from '../layout/MainLayout'
+import MainLayout from '../layout/MainLayout.js'
 
 import store1 from '../assets/images/store1.png'
 import store2 from '../assets/images/store2.png'

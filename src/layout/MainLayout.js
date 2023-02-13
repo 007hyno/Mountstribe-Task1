@@ -1,6 +1,6 @@
 import React from 'react'
-import NavCom from '../components/NavCom'
-import Footer from '../components/Footer'
+import NavCom from '../components/NavCom.js'
+import Footer from '../components/Footer.js'
 import '../assets/css/mainlayout.css'
 
 function MainLayout({children}) {

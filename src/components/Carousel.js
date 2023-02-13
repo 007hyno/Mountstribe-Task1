@@ -6,7 +6,7 @@ import img3 from '../assets/images/3.jpg';
 import img4 from '../assets/images/4.jpg';
   import '../assets/css/carousel.css'
 
-import Carousel from 'react-bootstrap/Carousel';
+import {Carousel} from 'react-bootstrap';
 
 
 export default () => {

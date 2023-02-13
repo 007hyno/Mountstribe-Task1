@@ -1,5 +1,5 @@
 import React from 'react'
-import MainLayout from '../layout/MainLayout'
+import MainLayout from '../layout/MainLayout.js'
 import '../assets/css/contact-style.css'
 
 function ContactPage() {

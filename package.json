@@ -2,6 +2,7 @@
   "name": "mountstribe_static_site",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-brands-svg-icons": "^6.2.1",
@@ -22,7 +23,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "type": "module",
+ 
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

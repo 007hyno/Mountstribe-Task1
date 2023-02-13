@@ -9,13 +9,13 @@ import './assets/js/styles.js'
 import { Navigate , Route, Routes } from 'react-router-dom';
 
 
-import Home from './pages/HomePage'
-import About from './pages/AboutPage'
-import Login from './pages/LoginPage'
-import Blog from './pages/BlogPage'
-import Store from './pages/StorePage'
-import Contact from './pages/ContactPage'
-import NotFound from './components/NotFound'
+import Home from './pages/HomePage.js'
+import About from './pages/AboutPage.js'
+import Login from './pages/LoginPage.js'
+import Blog from './pages/BlogPage.js'
+import Store from './pages/StorePage.js'
+import Contact from './pages/ContactPage.js'
+import NotFound from './components/NotFound.js'
 
 
 function App() {
