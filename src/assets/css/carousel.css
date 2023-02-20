@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Poppins&family=Raleway&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Poppins:wght@400;700&family=Raleway&family=Roboto&display=swap');
 .carousel-img-css{
 /* //a */
 height:700px;
@@ -8,6 +7,7 @@ height:700px;
     width:auto;
     height:700px;
     margin: auto;
+  position: relative;
   }
   .carousel-caption{
       top:40%;
@@ -17,21 +17,93 @@ height:700px;
       font-size: 70px;
       font-weight: 900;
       text-align: center;
-      color:#00ffbf;
-      
+      color:#ffffff;
+      /* display: flex; */
+      justify-content: center;
     }
     .carousel-desc{
         color:#ffffffd7;
         font-weight: 500;
     }
-    .carousel-text{
-      background-color: #4546464e;
+
+  .carousel-caption .desc1 {
+    animation: slideInBottom 1.8s forwards;
   }
+  
+  @keyframes slideInBottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  .carousel-caption .title2 {
+    animation: appear 2.2s forwards;
+  }
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .carousel-caption .title2 {
+    animation: slideIn 2.9s forwards;
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+
+
+
+
+
+  .title1{
+    margin-right: 1rem;
+  }
+  .title2{
+    color: #1e6ae1;
+  }
+
+  .desc1{
+    font-weight: bolder;
+    color: #ffffff;
+  }
+  .carousel-text{
+  text-shadow: 2px 2px 30px #201f1f;
+}
+
+
+  .caption-animate .item.active .carousel-caption {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+.fadeIn{
+  transition: opacity 5s;  
+  opacity: 1; 
+}
+.carousel-indicators .active{
+  background-color: #1e69e1ea;
+}
+
 
   @media only screen and (max-width: 575px) {
     .carousel-img-css{
       /* //a */
-      height:10%;
+      height:30%;
       }
       .carousel {
           width:auto;
@@ -39,14 +111,14 @@ height:700px;
           margin: auto;
         }
         .carousel-caption{
-            top:28%;
+            top:20%;
+            margin: 0 30px;
           }
           .carousel-title{
             font-family: 'Raleway', sans-serif;
             font-size: 25px;
             font-weight: 900;
             text-align: center;
-            color:#00ffbf;
             
           }
           .carousel-desc{
@@ -56,6 +128,13 @@ height:700px;
           .carousel-caption h2 {
             font-size: 19px;
         }
+        .title1{
+          margin-right: 0.4rem;
+        }
+        .carousel-text{
+          text-shadow: 2px 2px 50px #0e0e0e;
+        }
+        
     
 }
 

@@ -164,12 +164,15 @@ p.mb2.footerLinks {
 		padding: 10px 3px 10px 3px;
 	}
 	p.mb2.footerLinks {
-		display: block;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
 	}
 	.headin5_amrc{
 		background-color: #00000006;
-		padding: 5px;
-		margin: 0px;
+		padding: 5px 0px;
+		margin-bottom: 18px;
 	}
 	/* removing padding */
 	.nav-link {
@@ -189,8 +192,9 @@ p.mb2.footerLinks {
 	}
 	.footerLinks{
 		/* text-align: center; */
-		font-weight: 900;
+		font-weight: 500;
 		font-size: 15px;
+		display: flex;
 	}
 	.dash{
 		display: none;
@@ -213,5 +217,8 @@ p.mb2.footerLinks {
 		padding: 10px 10px;
 		padding-top: 10px;
 		float: left;
+	}
+	.footer_ul_amrc li{
+		margin: 0px 1px !important; 
 	}
 }

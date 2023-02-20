@@ -1,21 +1,50 @@
 .navbar{
   position: fixed;
-  /* top: -100px;  */
   width: 100%;
+  top: 0;
+  left: 0;
   z-index: 10; 
+  padding:  0px;
+  transition: 0.25s ease-in;
+
 }
 .container{
   justify-content: space-evenly;
 /* top: 0;
 height: 100vh;  */
 }
+.logo{
+width: 75px;
+transition: 0.35s ease-in;
+
+}
+
+.logo2{
+width: 50px;
+transition: 0.35s ease-in;
+
+}
 .navbar-css{
 background-color: #2c232371 !important;
+line-height: 42px;
+}
+.navbar-css2{
+  background-color: #1ee196 !important;
+  line-height: 42px;
+
+}
+
+
+.me-auto{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  float: right;
 }
 .nav-link{
   color: #ffffff ;
-  padding: 5px 10px;
-  margin: 5px 7px;
+  padding: 0px 10px;
+  margin: 0px 7px;
   font-weight: 500px;
 	
 }
@@ -32,4 +61,11 @@ background-color: #2c232371 !important;
       text-transform: capitalize;
       letter-spacing:3.4px;
   }
+  .logo2 {
+    width: 50px !important;    
+    }
+    .logo{
+      width: 50px;      
+      }
+    
 }

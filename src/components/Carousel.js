@@ -20,8 +20,8 @@ export default () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3 className='carousel-title carousel-text'>WE SERVE MICROGREENS</h3>
-          <h2 className='carousel-desc carousel-text'>Highly Nutritious</h2>
+          <h3 className='carousel-title carousel-text'><span  className='title1'> WE SERVE</span> <span className='title2 fadeIn'> MICROGREENS</span></h3>
+          <h2 className='carousel-desc carousel-text'><span className='desc1'>Highly Nutritious</span></h2>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -32,8 +32,8 @@ export default () => {
         />
 
         <Carousel.Caption>
-          <h1 className='carousel-title carousel-text'>WE SERVE SALADS</h1>
-          <h2 className='carousel-desc carousel-text'>Beyond Organics</h2>
+          <h1 className='carousel-title carousel-text'><span className='title1'> WE SERVE</span> <span className='title2 fadeIn'> SALADS</span></h1>
+          <h2 className='carousel-desc carousel-text'><span className='desc1'>Beyond Organics</span></h2>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -44,8 +44,8 @@ export default () => {
         />
 
         <Carousel.Caption>
-          <h1 className='carousel-title carousel-text'>WE SERVE FISHES</h1>
-          <h2 className='carousel-desc carousel-text'>AntiBiotics Free</h2>
+          <h1 className='carousel-title carousel-text'><span className='title1'> WE SERVE </span> <span className='title2 fadeIn'> FISHES</span></h1>
+          <h2 className='carousel-desc carousel-text'><span className='desc1'>AntiBiotics Free</span></h2>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -56,8 +56,8 @@ export default () => {
         />
 
         <Carousel.Caption>
-          <h1 className='carousel-title carousel-text'>WE SERVE HEALTH</h1>
-          <h2 className='carousel-desc carousel-text'>Mountstribe</h2>
+          <h1 className='carousel-title carousel-text'><span className='title1'> WE SERVE </span> <span className='title2 fadeIn'> HEALTH</span></h1>
+          <h2 className='carousel-desc carousel-text'><span className='desc1'>Mountstribe</span></h2>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
@@ -80,7 +80,7 @@ export default () => {
     // //           />
     // //           <Carousel.Caption>  
     // //             <h3 className='back-g h1'>WE SERVE MICROGREENS</h3>
-    // //             <p className='back-g h2'>Highly Nutritious</p>
+    // //             <span className='back-g h2'>Highly Nutritious</span>
     // //           </Carousel.Caption>
     // //           </div>
     // //         </Carousel.Item >
