@@ -3,14 +3,26 @@
 /* //a */
 height:700px;
 }
+
+.carousel-item {
+  height: 595px;
+}
+
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    min-height: 595px;
+}
 .carousel {
-    width:auto;
-    height:700px;
+    width:100% !important;
+    height:595px;
     margin: auto;
   position: relative;
   }
   .carousel-caption{
-      top:40%;
+      top:38%;
     }
     .carousel-title{
       font-family: 'Raleway', sans-serif;
@@ -18,41 +30,64 @@ height:700px;
       font-weight: 900;
       text-align: center;
       color:#ffffff;
-      /* display: flex; */
+      margin-bottom: 6px;
       justify-content: center;
+      
     }
     .carousel-desc{
         color:#ffffffd7;
         font-weight: 500;
+        margin-bottom: 20px;
     }
 
-  .carousel-caption .desc1 {
-    animation: slideInBottom 1.8s forwards;
+
+    .contactBtn{
+      padding: 10px 20px;
+        background-color: #1e6ae1;
+        color: white;
+        border-radius: 40px;
+        width: 150px;
+        font-size: 15px;
+        text-transform: uppercase;
+      }
+      a, a:visited, a:hover, a:active {
+        color: inherit;
+      }
+
+.flx{
+  display: inline;
+}
+
+  .carousel-caption .carousel-title .title1{
+    animation: slideInLeft 0.7s ease-in;
   }
-  
-  @keyframes slideInBottom {
+  @keyframes slideInLeft {
     0% {
-      transform: translateY(100%);
       opacity: 0;
+      transform: translateX(-20%);
     }
+50%{
+  opacity: 0;
+}
     100% {
       transform: translateX(0%);
-      opacity: 1;
     }
   }
-  .carousel-caption .title2 {
-    animation: appear 2.2s forwards;
+  .carousel-caption .carousel-title .title2 {
+    animation: appear 5s normal;
   }
   @keyframes appear {
     0% {
       opacity: 0;
     }
-    100% {
+    50%{
       opacity: 1;
     }
+
   }
-  .carousel-caption .title2 {
-    animation: slideIn 2.9s forwards;
+
+  /* .carousel-caption .carousel-title .title2 {
+    animation: slideIn 4.9s forwards;
   }
   @keyframes slideIn {
     0% {
@@ -62,79 +97,133 @@ height:700px;
       transform: translateX(0%);
     }
   }
+   */
+
+   
+  .carousel-caption .carousel-desc {
+    animation: slideInBottom 1.8s forwards;
+    font-weight: 100;
+    font-size: 26px;
+  }
+  @keyframes slideInBottom {
+    0% {
+      transform: translateY(80%) scale(1);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%) scale(1);
+      opacity: 1;
+    }
+  }
+  
   
 
 
 
-
-
   .title1{
-    margin-right: 1rem;
+    font-size: 60px;
   }
   .title2{
     color: #1e6ae1;
+    font-size: 60px;
+    
   }
-
+  
   .desc1{
     font-weight: bolder;
     color: #ffffff;
   }
   .carousel-text{
-  text-shadow: 2px 2px 30px #201f1f;
-}
-
-
+    text-shadow: 1px 0 5px #201f1f;
+  }
+  .btnCont{
+display: flex;
+justify-content: center;
+align-items: center;
+  }
+  
+  
   .caption-animate .item.active .carousel-caption {
     -webkit-animation-duration: 1s;
-    animation-duration: 1s;
+    animation-duration: 2s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
   }
-
+/* 
 .fadeIn{
   transition: opacity 5s;  
   opacity: 1; 
-}
+} */
 .carousel-indicators .active{
   background-color: #1e69e1ea;
 }
 
 
   @media only screen and (max-width: 575px) {
+
+    .carousel-item {
+      height: 500px;
+    }
+    
+    .carousel-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        min-height: 500px;
+    }
+    .carousel {
+        width:100% !important;
+        height:500px;
+        margin: auto;
+      position: relative;
+      }
+
+
+
     .carousel-img-css{
       /* //a */
-      height:30%;
+      height:10%;
       }
       .carousel {
           width:auto;
-          height:10%;
+          height:70%;
           margin: auto;
         }
         .carousel-caption{
-            top:20%;
+            top:30%;
             margin: 0 30px;
           }
-          .carousel-title{
-            font-family: 'Raleway', sans-serif;
-            font-size: 25px;
+          .carousel-title {
             font-weight: 900;
             text-align: center;
-            
+            font-size: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
           }
-          .carousel-desc{
-              color:#ffffffd7;
-              font-weight: 300;
+          .carousel-control-prev-icon{
+          font-weight: 900;
           }
+          
+
+               
+  .carousel-caption .carousel-desc {
+    font-size: 22px;
+    font-weight: 300;
+  }
           .carousel-caption h2 {
             font-size: 19px;
+
         }
         .title1{
-          margin-right: 0.4rem;
+          font-size: 36px;
         }
-        .carousel-text{
-          text-shadow: 2px 2px 50px #0e0e0e;
-        }
-        
+        .title2{  
+          text-align: center;
+          font-size: 36px;
+        }        
     
 }
 

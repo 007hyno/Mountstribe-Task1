@@ -7,6 +7,7 @@ import './assets/css/navbarStyle.css'
 import './assets/js/styles.js'
 
 import { Route, Routes } from 'react-router-dom';
+  
 
 
 import Home from './pages/HomePage.js'

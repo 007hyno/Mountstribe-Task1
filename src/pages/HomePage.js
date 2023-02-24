@@ -1,8 +1,7 @@
-import React from 'react'
+import React,{ useState, useEffect } from 'react'
 import MainLayout from '../layout/MainLayout.js'
 import { Link } from 'react-router-dom';
 import Carousel from '../components/Carousel.js'
-import Carousel2 from '../components/Carousel2.js'
 // import { Carousel } from 'react-bootstrap';
 // import '../assets/css/homeStyle.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -11,6 +10,7 @@ import '../assets/css/home-style.css'
 
 
 
+import banner from '../assets/images/bannerback.jpg'
 import farm1 from '../assets/images/farm.png'
 import farm2 from '../assets/images/farm2.png'
 import prem1 from '../assets/images/prem1.png'
@@ -25,25 +25,48 @@ import t3 from '../assets/images/t3.png'
 import t4 from '../assets/images/t4.png'
 import jakholi from '../assets/images/jakholi.jpg'
 
+// import { Parallax } from 'react-parallax';
+import { Parallax } from 'react-parallax';
+
 
 function HomePage() {
+const [background, setBackground] = useState(100);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop; 
+      const newPadding = (scrollTop-1700)/10; 
+      setBackground(newPadding);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll); // Detach the handleScroll function from the scroll event listener when the component unmounts
+    };
+  }, []);
+
+
+  
   return (
     <MainLayout>
       <div className='home-container '>
 
         <Carousel />
+        <Parallax
+	            blur={0}
+	            bgImage={banner}
+	            bgImageAlt="Mountstribe Banner"
+	            strength={360}
+	        >
 
-
-        <div className="jumbotron-fluid jumbo">
-          <div className="container">
-            <div className="row text-center"><h2 className="jumbo-title col">Mountstribe</h2></div>
-            <div className="row text-center"><div className="col">
-              <img className="img-fluid" src={mt} />
-            </div></div>
-            <div className="row text-center"><p className="col lead">At Mountstribe, we want to revolutionize food production in India by bringing the Highest Quality, Fresh &amp; Chemical-Free produce to your table. Each produce is grown with Non-GMO Seeds &amp; is Pesticide and Insecticide Free with a perfect blend of nutrition for your health.</p></div>
-          </div>
-        </div>
-
+	            <div className="jumbotron-fluid jumbo about-mt">
+		          <div className="container">
+		              <div className="row text-center jumbo-title "><h2 className="col">MOUNTSTRIBE</h2></div>
+		              <div className="row text-center"><div className="col"><img src={mt}/></div></div>
+		              <div className="row text-center"><p className="col lead jumbo-desc">At Mountstribe, we want to revolutionize food production in India by bringing the Highest Quality, Fresh &amp; Chemical-Free produce to your table. Each produce is grown with Non-GMO Seeds &amp; is Pesticide and Insecticide Free with a perfect blend of nutrition for your health.</p></div>
+		          </div>
+		        </div>
+	        </Parallax>
 
         <div className="jumbotron-fluid farm-to-fork text-center">
           <div className="container-fluid">
@@ -125,7 +148,9 @@ function HomePage() {
           </div>
         </div>
 
-        <div className="visit-us-banner">
+
+       
+        <div className="visit-us-banner " style={{ backgroundPosition:-background }} >
           <div className="container">
             <div className="row">
               <div className="col visit-us-heading text-center">
@@ -134,7 +159,7 @@ function HomePage() {
             </div>
             <div className="row">
               <div className="col text-center">
-                {/* <img className="img-fluid" src={jakholi} /> */}
+                <img className="img-fluid" src={mt} />
               </div>
             </div>
             <div className="row">
