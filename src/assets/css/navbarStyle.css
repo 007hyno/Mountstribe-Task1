@@ -11,7 +11,7 @@
 
 /* 🔴 /// */
 
-.navbar-toggler span {
+/* .navbar-toggler span {
   display: block;
   position: relative;
   width: 24px;
@@ -47,7 +47,7 @@
 
 .navbar-toggler.collapsed span::after {
   transform: rotate(-90deg) translateX(6px);
-}
+} */
 
 /* //🔴  */
 

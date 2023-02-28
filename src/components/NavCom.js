@@ -6,7 +6,7 @@ import image from '../assets/logo/mountstribe-white.svg';
 
 import '../assets/css/navbarStyle.css';
 // --------------------------
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 
 
 function NavCom() {

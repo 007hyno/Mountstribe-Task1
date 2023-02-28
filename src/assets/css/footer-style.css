@@ -182,19 +182,12 @@ p.mb2.footerLinks {
 	.bottom_border{
 			padding-bottom: 0px;
 	}
-	.footer-links {
-		/* display: flex; */
-		text-align: center;
-		padding: 0px;
-	}
-	.footer-links a{
-		width: 100%;
-		text-align: center;
-	}
+	
 	.footerLinks{
 		/* text-align: center; */
 		font-weight: 500;
-		font-size: 15px;
+		font-size: 13px;
+		color: #c8e6c9;
 		display: flex;
 	}
 	.dash{
