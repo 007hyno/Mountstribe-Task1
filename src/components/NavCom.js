@@ -38,10 +38,27 @@ function NavCom() {
 				<Navbar.Brand href="/">
 					<img className={colorChange? 'logo2' : 'logo' } src={image}  alt="Logo" color='#000000' />
 				</Navbar.Brand>
-				{/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
-				<Navbar.Toggle onClick={() => setOpen(!open)} />
-
-
+				{/* <Navbar.Toggle onClick={() => setOpen(!open)} /> */}
+				<Navbar.Toggle onClick={() => setOpen(!open)} aria-controls="basic-navbar-nav" >
+						<span> </span>
+            <span> </span>
+            <span> </span>
+					</Navbar.Toggle>
+				{/* <a className="navbar-toggler collapsed border-0" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <span> </span>
+            <span> </span>
+            <span> </span>
+        </a> */}
+				{/* <div className="collapse navbar-collapse" id="collapsingNavbar">
+            <ul className="nav navbar-nav">
+                <li className="nav-item">
+                    <a className="nav-link" href="#">About</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div> */}
 				<Navbar.Collapse id="basic-navbar-nav" className='navlink-cont' in={open}>
 					<Nav className="me-auto">
 					<Nav.Link ><Link to='/' className='nav-link '>Home</Link></Nav.Link>
