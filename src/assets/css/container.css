@@ -4,7 +4,9 @@
 }
 
 h2{
-  font-weight: bolder;
+  font-weight: 0;
+  color: #06152d;
+  font-size: 2rem;
 }
 
 

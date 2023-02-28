@@ -27,13 +27,17 @@
 }
 @media only screen and (max-width: 767px) and (min-width: 501px) {
     .jumbo{
-        padding:0.2rem 0.1rem ;
+        padding:0.4rem 0.1rem ;
     background-color: #eceff1;
     }
     .jumbo-title{
+        margin-top: 40px;
         text-align: center;
         text-transform: capitalize;
         letter-spacing:3.4px;
+    }
+    .jumbo-title h2{
+        font-size: 2rem;
     }
 }
 
@@ -47,8 +51,19 @@
         text-transform: capitalize;
         letter-spacing:2.4px;
         font-weight: 100;
-        margin-top: 10px;
+        margin-top: 40px;
         margin-bottom: -9px;
+        
+    }
+    .jumbo-title h2{
+        color: #06152dc5;
+
+    }
+    .jumbo-desc{
+        font-size: 0.8rem;
+        letter-spacing:0px;
+        color: #06152dc5;
+
     }
     .lead{
         font-size: 1rem;
@@ -128,6 +143,8 @@
 }
 
 /*Style for product list*/
+.text-secondary{
+}
 .products-banner {
     padding: 80px 190px;
     background-color: #eceff1;
@@ -150,7 +167,7 @@
 }
 .product-category-name a {
     text-decoration: none;
-    color: #1ecbe1;
+    color: #1ecbe1 !important;
     font-size: 18px;
     transition: all 0.27s ease-in-out;
 }
@@ -169,6 +186,7 @@
         max-width: 100px;
     }
     .product-category-name a {
+
         padding: 4px;
         font-size: 16px;
     }

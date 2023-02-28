@@ -8,6 +8,55 @@
   transition: 0.25s ease-in;
 
 }
+
+/* 🔴 /// */
+
+.navbar-toggler span {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 2px;
+  transition: transform 0.5s;
+}
+
+.navbar-toggler span::before,
+.navbar-toggler span::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  transition: transform 0.5s;
+}
+
+.navbar-toggler span::before {
+  transform: translateY(-8px);
+}
+
+.navbar-toggler span::after {
+  transform: translateY(8px);
+}
+
+.navbar-toggler.collapsed span {
+  transform: rotate(45deg);
+}
+
+.navbar-toggler.collapsed span::before {
+  transform: rotate(90deg) translateX(6px);
+}
+
+.navbar-toggler.collapsed span::after {
+  transform: rotate(-90deg) translateX(6px);
+}
+
+/* //🔴  */
+
+
+
+
+
+
+
 .container{
   justify-content: space-evenly;
 /* top: 0;

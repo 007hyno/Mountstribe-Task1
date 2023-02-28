@@ -164,15 +164,16 @@ p.mb2.footerLinks {
 		padding: 10px 3px 10px 3px;
 	}
 	p.mb2.footerLinks {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
+		display: inline;
+		/* display: flex; */
+		/* justify-content: center;
+		align-items: center; */
+		/* flex-direction: column; */
 	}
 	.headin5_amrc{
 		background-color: #00000006;
 		padding: 5px 0px;
-		margin-bottom: 18px;
+		margin-bottom: 6px;
 	}
 	/* removing padding */
 	.nav-link {
@@ -220,5 +221,9 @@ p.mb2.footerLinks {
 	}
 	.footer_ul_amrc li{
 		margin: 0px 1px !important; 
+	}
+
+	.footersubs{
+		display: flex;
 	}
 }

@@ -9,32 +9,32 @@ function Footer() {
 				<div className="row">
 					<div className="col-12">
 						<h6 className="headin5_amrc col_white_amrc pt2">A Beyond Organics Company | <span className="start-up">#Start-upIndia</span> | #BeyondOrganics</h6>
-						<p className="mb2 footerLinks">
+						<p className="mb2 footerLinks footersubs">
 
-	          <span className="col_white_amrc  footer-text ">All Subscriptions: </span>
+							<span className="col_white_amrc  footer-text ">All Subscriptions: </span>
 
-					   <Link to='/store/microgreens-blush'><p className='footer-links '> Microgreens Blush</p> </Link>
+							<Link to='/store/microgreens-blush'><span className='footer-links '> Microgreens Blush</span> </Link>
 
-					    <p className='footer-links dash'>|</p> 
+							<span className='footer-links dash'>|</span>
 
-						<Link to='/store/microgreens-lite'><p className='footer-links '> Microgreens Lite</p> </Link>
+							<Link to='/store/microgreens-lite'><span className='footer-links '> Microgreens Lite</span> </Link>
 
-					    <p className='footer-links dash'>|</p> 
+							<span className='footer-links dash'>|</span>
 
-						<Link to='/store/organic-wheatgrass'><p className='footer-links '> Organic Wheatgrass</p> </Link>
+							<Link to='/store/organic-wheatgrass'><span className='footer-links '> Organic Wheatgrass</span> </Link>
 
-	                </p>
+						</p>
 					</div>
 				</div>
 				<div className="row">
 					<div className=" col-sm-4 col-md col-sm-4  col-12 col">
-						<h5 className="headin5_amrc col_white_amrc pt2 rp">Find us</h5>
-						<p className="mb9"> Mountstribe is a startup nestled in the Himalayas. We want to change the landscape of Indian Agricultural industry by producing and providing Highly Nutritious & Chemical-Free 'Organic' food.</p>
-						<p><i className="fa fa-location-arrow"></i> C/O Balam Singh, 1 Tarla Amwaala, Dehradun, Uttarakhand - 248001 </p>
-						<p><i className="fa fa fa-envelope"></i> info@mountstribe.com  </p>
+						<h5 className="headin5_amrc col_white_amrc pt2 rp mt-5">Find us</h5>
+						<p className="mb7"> Mountstribe is a startup nestled in the Himalayas. We want to change the landscape of Indian Agricultural industry by producing and providing Highly Nutritious & Chemical-Free 'Organic' food.</p>
+						<p><i className="fa fa-location-arrow mt-4"></i> C/O Balam Singh, 1 Tarla Amwaala, Dehradun, Uttarakhand - 248001 </p>
+						<p><i className="fa fa fa-envelope mt-4"></i> info@mountstribe.com  </p>
 					</div>
 					<div className=" col-sm-4 col-md  col-6 col">
-						<h5 className="headin5_amrc col_white_amrc pt2">Quick links</h5>
+						<h5 className="headin5_amrc col_white_amrc pt2 mt-4">Quick links</h5>
 						<ul className="footer_ul_amrc">
 							<li><Link to='/' className=''>Home</Link></li>
 							<li><Link to='/store' className=''>Store</Link></li>
@@ -44,7 +44,7 @@ function Footer() {
 						</ul>
 					</div>
 					<div className=" col-sm-4 col-md  col-6 col">
-						<h5 className="headin5_amrc col_white_amrc pt2">Resources</h5>
+						<h5 className="headin5_amrc col_white_amrc pt2 mt-4">Resources</h5>
 						<ul className="footer_ul_amrc">
 							<li><Link to='/terms-and-conditions' className=''>Terms & Conditions</Link></li>
 							<li><Link to='/privacy-policy' className=''>Privacy Policy</Link></li>
