@@ -5,7 +5,7 @@ height:700px;
 }
 
 .carousel-item {
-  height: 595px;
+  height: 660px;
 }
 
 .carousel-item img {
@@ -13,11 +13,11 @@ height:700px;
     top: 0;
     left: 0;
     object-fit: cover;
-    min-height: 595px;
+    min-height: 660px;
 }
 .carousel {
     width:100% !important;
-    height:595px;
+    height:660px;
     margin: auto;
   position: relative;
   }
@@ -121,11 +121,11 @@ height:700px;
 
 
   .title1{
-    font-size: 60px;
+    font-size: 72px;
   }
   .title2{
     color: #1e6ae1;
-    font-size: 60px;
+    font-size: 72px;
     
   }
   

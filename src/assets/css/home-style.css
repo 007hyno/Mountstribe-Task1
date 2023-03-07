@@ -24,6 +24,8 @@
     letter-spacing:1.8px;
     font-weight: lighter;
     font-size: 12px;
+    margin: 0px 50px
+
 }
 @media only screen and (max-width: 767px) and (min-width: 501px) {
     .jumbo{
@@ -39,6 +41,7 @@
     .jumbo-title h2{
         font-size: 2rem;
     }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -63,6 +66,7 @@
         font-size: 0.8rem;
         letter-spacing:0px;
         color: #06152dc5;
+        margin: 0px 
 
     }
     .lead{

@@ -62,10 +62,10 @@ function NavCom() {
 				<Navbar.Collapse id="basic-navbar-nav" className='navlink-cont' in={open}>
 					<Nav className="me-auto">
 					<Nav.Link ><Link to='/' className='nav-link '>Home</Link></Nav.Link>
-						<Nav.Link ><Link to='/about' className='nav-link '>About</Link></Nav.Link>
-						<Nav.Link ><Link to='/contact' className='nav-link '>Contact</Link></Nav.Link>
+						<Nav.Link ><Link to='/about' className='nav-link '>About Us</Link></Nav.Link>
 						<Nav.Link ><Link to='/store' className='nav-link '>Store</Link></Nav.Link>
-						<Nav.Link ><Link to='/login' className='nav-link '>Login</Link></Nav.Link>
+						<Nav.Link ><Link to='/contact' className='nav-link '>Contact</Link></Nav.Link>
+						<Nav.Link ><Link to='/login' className='nav-link '>Sign-in</Link></Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
 			</Container>
