@@ -13,10 +13,12 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './pages/HomePage.js'
 import About from './pages/AboutPage.js'
 import Login from './pages/LoginPage.js'
-// import Blog from './pages/BlogPage.js'
 import Store from './pages/StorePage.js'
 import Contact from './pages/ContactPage.js'
 import NotFound from './components/NotFound.js'
+
+//store
+import Product from './pages/Products.js'
 
 //components
 import TermsAndConditions from './components/Footer/TermsAndConditions.js'
@@ -34,6 +36,9 @@ function App() {
         <Route exact path='/contact' element={< Contact />}></Route>
         <Route exact path='/Store' element={< Store />}></Route>
         <Route exact path='/Login' element={< Login />}></Route>
+
+        {/* Store */}
+        <Route exact path='/store/:id' element={< Product />}></Route>
 
         {/* Footers */}
         <Route exact path='/terms-and-conditions' element={< TermsAndConditions />}></Route>
