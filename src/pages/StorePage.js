@@ -8,8 +8,10 @@ import '../assets/css/store-style.css'
 function StorePage() {
   const [microgreens, setMicrogreens] = useState([]);
 
+  const apiUrl = process.env.REACT_APP_API_URL;
+  console.log(`${apiUrl}store`);
   useEffect(() => {
-    fetch('http://localhost:8080/api/store')
+    fetch(`${apiUrl}store`)
       .then(response => response.json())
       .then(data => setMicrogreens(data.data))
       .catch(error => console.log(error));
